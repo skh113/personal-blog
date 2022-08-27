@@ -5,7 +5,6 @@ import Profile from "../components/Profile";
 function Home() {
   return (
     <div>
-      <Header />
       <Profile
         name={"Keyvan Hosseini"}
         city={"Karaj"}
