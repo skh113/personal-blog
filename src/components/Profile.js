@@ -8,7 +8,7 @@ function Profile(props) {
       <Info>
         <ProfileImg src={props.img} alt="profile-image" />
         <a href="https://www.google.com">{props.name}</a>
-        {props.city}
+        {props.position}
       </Info>
       <Insight>
         <Item>
