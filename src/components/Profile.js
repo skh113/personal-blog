@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-function Profile() {
+function Profile(props) {
   return (
     <Container>
       <BgImg src="/profile/bg-pattern-card.svg" alt="bg" />
       <Info>
-        <ProfileImg src="/profile/Profile.jpg" alt="profile-image" />
-        <a href="https://www.google.com">Keyvan Hosseini</a>
-        City
+        <ProfileImg src={props.img} alt="profile-image" />
+        <a href="https://www.google.com">{props.name}</a>
+        {props.city}
       </Info>
       <Insight>
         <Item>
@@ -55,7 +55,9 @@ const Info = styled.div`
   flex-direction: column;
   align-items: center;
   color: hsl(0, 0%, 59%);
-  top: -50px;
+  top: -20%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
 
   a {
     text-decoration: none;
@@ -69,14 +71,16 @@ const Info = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px solid whitesmoke;
+  margin-bottom: 5px;
 `;
 
 const Insight = styled.div`
-  border-top: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  top: -17%;
   width: 100%;
   display: flex;
   justify-content: space-evenly;

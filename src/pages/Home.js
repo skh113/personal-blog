@@ -6,7 +6,11 @@ function Home() {
   return (
     <div>
       <Header />
-      <Profile />
+      <Profile
+        name={"Keyvan Hosseini"}
+        city={"Karaj"}
+        img={"/profile/Profile.jpg"}
+      />
     </div>
   );
 }
