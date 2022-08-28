@@ -28,14 +28,13 @@ const Container = styled.div`
   border-right: 1px solid hsl(0, 0%, 70%);
   box-shadow: 2.7px 2.6px 3.6px rgba(0, 0, 0, 0.024),
     7.5px 7.3px 10px rgba(0, 0, 0, 0.035),
-    18.1px 17.5px 24.1px rgba(0, 0, 0, 0.046),
-    60px 58px 80px rgba(0, 0, 0, 0.07);
+    18.1px 17.5px 24.1px rgba(0, 0, 0, 0.046);
 
   * {
     margin: 0;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 80%;
   }
 `;
@@ -63,8 +62,6 @@ const Author = styled.div`
 `;
 
 const Title = styled.a`
-  text-decoration: none;
-  color: black;
   * {
     padding: 0 10px 10px;
   }

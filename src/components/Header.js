@@ -26,13 +26,13 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid hsl(0, 0%, 90%);
+  box-shadow: 2.7px 2.6px 3.6px rgba(0, 0, 0, 0.024),
+    7.5px 7.3px 10px rgba(0, 0, 0, 0.035);
 `;
 
 const LeftSide = styled.div`
   a {
     padding: 0 10px;
-    text-decoration: none;
-    color: black;
 
     &:first-child {
       font-weight: 700;

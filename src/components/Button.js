@@ -14,18 +14,19 @@ const Container = styled.button`
   border-radius: 10px;
   background-color: white;
   padding: 10px 20px;
-  transition: 500ms;
+  transition: 750ms;
   cursor: pointer;
 
   a {
-    text-decoration: none;
-    color: hsl(0, 0%, 40%);
+    color: black;
   }
 
   &:hover {
     border-radius: 15px;
+    background-color: black;
+
     a {
-      color: black;
+      color: whitesmoke;
     }
   }
 `;

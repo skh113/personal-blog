@@ -7,21 +7,20 @@ function Profile(props) {
       <BgImg src="/profile/bg-pattern-card.svg" alt="bg" />
       <Info>
         <ProfileImg src={props.img} alt="profile-image" />
-        <a href="https://www.google.com">{props.name}</a>
+        <h1>{props.name}</h1>
         {props.position}
       </Info>
       <Insight>
         <Item>
-          50K
-          <span>Instagram</span>
+          4<span>Posts</span>
         </Item>
         <Item>
-          538
-          <span>GitHub</span>
+          50
+          <span>Views</span>
         </Item>
         <Item>
           10K
-          <span>Linkedin</span>
+          <span>Likes</span>
         </Item>
       </Insight>
     </Container>
@@ -31,7 +30,6 @@ function Profile(props) {
 const Container = styled.div`
   width: 375px;
   height: 375px;
-  margin: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -39,8 +37,7 @@ const Container = styled.div`
   overflow: hidden;
   box-shadow: 2.7px 2.6px 3.6px rgba(0, 0, 0, 0.024),
     7.5px 7.3px 10px rgba(0, 0, 0, 0.035),
-    18.1px 17.5px 24.1px rgba(0, 0, 0, 0.046),
-    60px 58px 80px rgba(0, 0, 0, 0.07);
+    18.1px 17.5px 24.1px rgba(0, 0, 0, 0.046);
 `;
 
 const BgImg = styled.img`
