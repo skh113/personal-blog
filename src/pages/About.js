@@ -17,7 +17,7 @@ function About() {
         />
         <ContactInfo>
           Contact Information
-          <Item href="google">
+          <Item href="tel:+989305121569">
             <img src="/contact/phone.png" alt="contact-icon" />
             <h4>09305121569</h4>
           </Item>
@@ -42,11 +42,14 @@ function About() {
       </LeftSide>
       <RightSide>
         <Description>
-          I'm a Junior web developer interested in web technologies and
-          "Python". I am good at learning new concepts and structures swiftly.
-          therefore, I enjoy spending my time upskilling my skillset so I'm
-          eagerly interested to learn new concepts in the tech world. In
-          addition, I’m looking forward to mastering "Django" in an occupation.
+          <h3>
+            I'm a Junior web developer interested in web technologies and
+            "Python".
+          </h3>
+          I am good at learning new concepts and structures swiftly. therefore,
+          I enjoy spending my time upskilling my skillset so I'm eagerly
+          interested to learn new concepts in the tech world. In addition, I’m
+          looking forward to mastering "Django" in an occupation.
         </Description>
         <Projects />
         <Tech />
@@ -73,7 +76,6 @@ const Container = styled.div`
 `;
 
 const LeftSide = styled.div``;
-
 const ContactInfo = styled.div`
   width: 375px;
   border-radius: 10px;
@@ -101,8 +103,26 @@ const Item = styled.a`
   }
 `;
 
-const RightSide = styled.div``;
+const RightSide = styled.div`
+  * {
+    @media (max-width: 768px) {
+      margin: 20px 0;
+    }
+  }
+`;
 
-const Description = styled.div``;
+const Description = styled.div`
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 2.7px 2.6px 3.6px rgba(0, 0, 0, 0.024),
+    7.5px 7.3px 10px rgba(0, 0, 0, 0.035),
+    18.1px 17.5px 24.1px rgba(0, 0, 0, 0.046);
+
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+`;
 
 export default About;
